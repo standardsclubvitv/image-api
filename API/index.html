@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Image Viewer</title>
+
+  <!-- Meta tags with GitHub image URLs (replace your_username and repo_name) -->
+  <meta property="og:title" content="BIS Standards Club - Quiz Platform">
+  <meta property="og:description" content="A cool quiz platform showcasing BIS standards.">
+  <meta property="og:image" content="https://your_username.github.io/repo_name/images/1.jpg">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <h1>Random Image Generator</h1>
+  <img id="randomImg" src="" alt="Random" style="max-width: 90%; height: auto;" />
+
+  <script>
+    const images = [
+      "images/1.jpg",
+      "images/2.jpg",
+      "images/3.jpg"
+    ];
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.getElementById("randomImg").src = randomImage;
+  </script>
+</body>
+</html>
