@@ -5,18 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Random Image Viewer</title>
 
-  <!-- Meta tags with GitHub image URLs (replace your_username and repo_name) -->
+  <!-- Meta tags (example image URL) -->
   <meta property="og:title" content="BIS Standards Club - Quiz Platform">
   <meta property="og:description" content="A cool quiz platform showcasing BIS standards.">
   <meta property="og:image" content="https://your_username.github.io/repo_name/images/1.jpg">
   <meta property="og:type" content="website">
 </head>
 <body>
-  <h1>Random Image Generator</h1>
+  <h1>All Images</h1>
+
+  <!-- Show all images properly -->
+  <img src="./images/1.jpg" alt="Image 1" style="max-width: 90%; height: auto;" />
+  <img src="./images/logo.png" alt="Logo" style="max-width: 90%; height: auto;" />
+  <img src="./images/download (2).png" alt="Download 2" style="max-width: 90%; height: auto;" />
+  <img src="./images/WhatsApp Image 2025-05-31 at 21.54.58_9748b893.jpg" alt="WhatsApp Image" style="max-width: 90%; height: auto;" />
+
+  <h2>Random Image Below</h2>
+  <!-- This image will change randomly on page load -->
   <img id="randomImg" src="./images/1.jpg" alt="Random" style="max-width: 90%; height: auto;" />
-  <img id="randomImg" src="./images/logo.png" alt="Random" style="max-width: 90%; height: auto;" />
-   <img id="randomImg" src="./images/download (2).png" alt="Random" style="max-width: 90%; height: auto;" />
-   <img id="randomImg" src="./images/WhatsApp Image 2025-05-31 at 21.54.58_9748b893.jpg" alt="Random" style="max-width: 90%; height: auto;" />
 
   <script>
     const images = [
